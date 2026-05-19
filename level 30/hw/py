@@ -1,0 +1,64 @@
+#lower() მეთოდი სტრინგში ყველა დიდ ასოს პატარა ასოდ გადააქცევს.
+
+#2
+text = "PYTHON "
+shedegi = text.lower()
+
+print(shedegi)
+#3
+text = "hello"
+print(text.upper())
+
+
+#4
+word = input("ENTER A WORD: ")
+
+print(word.upper())
+
+
+#5
+text = "hello world"
+print(text.title())
+
+#6
+words = ["hello goa", "python ", "berries"]
+
+for word in words:
+    print(word.title())
+
+
+#7
+
+text = "PyThOn"
+
+result = text.swapcase()
+
+print(result)
+
+
+#8
+
+text = "banana"
+
+print(text.count("a"))
+
+#9  ?
+
+
+
+#10
+
+name = input("enter your name: ")
+surname = input("enter your username: ")
+
+print(name.title(), surname.title())
+
+#11 ?
+
+#12?
+
+
+
+
+
+
