@@ -53,7 +53,21 @@ surname = input("enter your username: ")
 
 print(name.title(), surname.title())
 
-#11 ?
+#11 
+wiandadeba = input("enter a sentence: ")
+wiandadeba = wiandadeba.lower()
+raodenoba = 0
+xmovani = "aeiou"
+current_number = 0
+different_i = 0
+
+for i in range(len(wiandadeba)):
+        current_number = i
+        for different_i in range(len(xmovani)):
+            if wiandadeba[current_number] == xmovani[different_i]:
+                raodenoba += 1
+
+
 
 #12?
 

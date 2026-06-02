@@ -1,0 +1,354 @@
+<html>
+
+<head>
+    <!--colspan გამოიყენება მაშინ, როცა ერთი უჯრა უნდა გაერთიანდეს რამდენიმე სვეტთან
+
+rowspan გამოიყენება მაშინ, როცა ერთი უჯრა უნდა გაერთიანდეს რამდენიმე რიგთან
+
+<thead>  ცხრილის სათაური, სადაც სვეტების სახელები იწერება
+       
+<tbody>  ცხრილის მთავარი ნაწილი, სადაც მონაცემებია მოთავსებული
+
+<tfoot>  ცხრილის ქვედა ნაწილი, სადაც ხშირად ჯამი ან დამატებითი ინფორმაცია იწერება -->
+
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <table style="border-collapse: collapse; text-align: center; border: 2px solid; border-color: black;">
+
+        <thead style="background-color: lightblue;">
+            <tr>
+                <th style="border: 2px solid;"> name</th>
+                <th style="border: 2px solid;">age</th>
+            </tr>
+        </thead>
+
+        <tbody style="background-color: lightyellow;">
+            <tr>
+                <td style="border: 2px solid;">david</td>
+                <td style="border: 2px solid;">16</td>
+            </tr>
+            <tr>
+                <td style="border: 2px solid;">nick</td>
+                <td style="border: 2px solid;">15</td>
+            </tr>
+        </tbody>
+
+        <tfoot style="background-color: lightgreen;">
+            <tr>
+                <td colspan="2">2 </td>
+            </tr>
+        </tfoot>
+
+    </table>
+    <br><br><br>
+
+    <table style="border: 2px solid; border-collapse: collapse;">
+
+    <thead>
+        <tr>
+            <th colspan="2" style="border: 2px solid;">Student Info</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td style="border: 2px solid;">Name</td>
+            <td style="border: 2px solid;">Age</td>
+        </tr>
+
+        <tr>
+            <td style="border: 2px solid;">Nika</td>
+            <td style="border: 2px solid;">17</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="2" style="border: 2px solid;">Student Data</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+
+<br><br><br>
+
+<table style="border: 2px solid; border-collapse: collapse;">
+
+    <thead>
+        <tr>
+            <th style="border: 2px solid;">Day</th>
+            <th style="border: 2px solid;">Subject</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="2" style="border: 2px solid;">Monday</td>
+            <td style="border: 2px solid;">Math</td>
+        </tr>
+
+        <tr>
+            <td style="border: 2px solid;">Physics</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="2" style="border: 2px solid;">Schedule</td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<br><br><br>
+
+
+<table style="border: 2px solid; border-collapse: collapse;">
+
+    <thead>
+        <tr>
+            <th rowspan="2" style="border: 2px solid;">Name</th>
+            <th colspan="2" style="border: 2px solid;">Scores</th>
+        </tr>
+
+        <tr>
+            <th style="border: 2px solid;">Math</th>
+            <th style="border: 2px solid;">Science</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td style="border: 2px solid;">Ana</td>
+            <td style="border: 2px solid;">95</td>
+            <td style="border: 2px solid;">88</td>
+        </tr>
+
+        <tr>
+            <td style="border: 2px solid;">Luka</td>
+            <td style="border: 2px solid;">90</td>
+            <td style="border: 2px solid;">92</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="3" style="border: 2px solid;">Exam Results</td>
+        </tr>
+    </tfoot>
+
+</table>
+<br><br><br>
+
+<table>
+    <thead>
+        <tr>
+            <th style="border: 1px solid black; padding: 12px;">Hour</th>
+            <th style="border: 1px solid black; padding: 12px;">Monday</th>
+            <th style="border: 1px solid black; padding: 12px;">Tuesday</th>
+            <th style="border: 1px solid black; padding: 12px;">Wednesday</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td style="border: 1px solid black; padding: 12px;">08:00</td>
+            <td style="border: 1px solid black;" rowspan="2">Geography</td>
+            <td style="border: 1px solid black;">English</td>
+            <td style="border: 1px solid black;" rowspan="3">Computer Science</td>
+        </tr>
+
+        <tr>
+            <td style="border: 1px solid black; padding: 12px;">09:00</td>
+            <td style="border: 1px solid black;">Art</td>
+        </tr>
+
+        <tr>
+            <td style="border: 1px solid black; padding: 12px;">10:00</td>
+            <td style="border: 1px solid black;" colspan="2">Physical Education</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td style="border: 1px solid black; padding: 12px;">11:00</td>
+            <td style="border: 1px solid black;">Math</td>
+            <td style="border: 1px solid black;">Biology</td>
+            <td style="border: 1px solid black;">Chemistry</td>
+        </tr>
+    </tfoot>
+
+</table>
+<br><br><br>
+
+<table style="border-collapse: collapse; width: 650px; text-align: center;">
+
+    <thead>
+        <tr>
+            <th rowspan="2" style="border:1px solid black; padding:10px;">ID</th>
+            <th colspan="3" style="border:1px solid black; padding:10px;">Employee Details</th>
+            <th colspan="2" style="border:1px solid black; padding:10px;">Evaluation</th>
+        </tr>
+
+        <tr>
+            <th style="border:1px solid black;">Name</th>
+            <th style="border:1px solid black;">City</th>
+            <th style="border:1px solid black;">Position</th>
+            <th style="border:1px solid black;">Points</th>
+            <th style="border:1px solid black;">Grade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="2" style="border:1px solid black;">101</td>
+            <td rowspan="2" style="border:1px solid black;">Ana</td>
+            <td style="border:1px solid black;">Tbilisi</td>
+            <td style="border:1px solid black;">Designer</td>
+            <td style="border:1px solid black;">95</td>
+            <td style="border:1px solid black;">A</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="border:1px solid black;">UI / UX Specialist</td>
+            <td colspan="2" rowspan="2" style="border:1px solid black;">Excellent</td>
+        </tr>
+
+        <tr>
+            <td style="border:1px solid black;">102</td>
+            <td style="border:1px solid black;">Gio</td>
+            <td style="border:1px solid black;">Batumi</td>
+            <td style="border:1px solid black;">Developer</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="6" style="border:1px solid black; padding:15px;">
+                Employee Report Finished
+            </td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<br><br><br>
+
+<table style="border-collapse: collapse; width: 700px; text-align: center;">
+
+    <thead>
+        <tr>
+            <th rowspan="3" style="border:1px solid black;">Faculty</th>
+            <th rowspan="3" style="border:1px solid black;">Course</th>
+            <th colspan="4" style="border:1px solid black;">Student Results</th>
+        </tr>
+
+        <tr>
+            <th colspan="2" style="border:1px solid black;">Midterm</th>
+            <th colspan="2" style="border:1px solid black;">Final Exam</th>
+        </tr>
+
+        <tr>
+            <th style="border:1px solid black;">Theory</th>
+            <th style="border:1px solid black;">Practice</th>
+            <th style="border:1px solid black;">Theory</th>
+            <th style="border:1px solid black;">Practice</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td rowspan="2" style="border:1px solid black;">Engineering</td>
+            <td style="border:1px solid black;">1</td>
+            <td style="border:1px solid black;">80</td>
+            <td style="border:1px solid black;">85</td>
+            <td style="border:1px solid black;">88</td>
+            <td style="border:1px solid black;">92</td>
+        </tr>
+
+        <tr>
+            <td style="border:1px solid black;">2</td>
+            <td colspan="2" style="border:1px solid black;">Project Work</td>
+            <td style="border:1px solid black;">91</td>
+            <td style="border:1px solid black;">95</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="6" style="border:1px solid black; padding:15px;">
+                Semester Results Published
+            </td>
+        </tr>
+    </tfoot>
+
+</table>
+
+<br><br><br>
+
+<table style="border-collapse: collapse; text-align:center;">
+    <tr>
+        <td rowspan="4" style="border:1px solid black; padding:20px;">1</td>
+        <td colspan="3" style="border:1px solid black; padding:20px;">2</td>
+        <td rowspan="2" style="border:1px solid black; padding:20px;">3</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" style="border:1px solid black; padding:20px;">4</td>
+        <td colspan="2" style="border:1px solid black; padding:20px;">5</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" style="border:1px solid black; padding:20px;">6</td>
+        <td style="border:1px solid black; padding:20px;">7</td>
+        <td style="border:1px solid black; padding:20px;">8</td>
+    </tr>
+
+    <tr>
+        <td style="border:1px solid black; padding:20px;">9</td>
+        <td style="border:1px solid black; padding:20px;">10</td>
+        <td style="border:1px solid black; padding:20px;">11</td>
+    </tr>
+
+    <tr>
+        <td colspan="2" rowspan="2" style="border:1px solid black; padding:20px;">12</td>
+        <td style="border:1px solid black; padding:20px;">13</td>
+        <td rowspan="2" style="border:1px solid black; padding:20px;">14</td>
+        <td style="border:1px solid black; padding:20px;">15</td>
+    </tr>
+
+    <tr>
+        <td style="border:1px solid black; padding:20px;">16</td>
+        <td style="border:1px solid black; padding:20px;">17</td>
+    </tr>
+
+    <tr>
+        <td style="border:1px solid black; padding:20px;">18</td>
+        <td style="border:1px solid black; padding:20px;">19</td>
+        <td colspan="3" style="border:1px solid black; padding:20px;">
+            BOSS LEVEL
+        </td>
+    </tr>
+</table>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
